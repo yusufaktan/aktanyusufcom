@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-color: #222426;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.container-left {
+  float: left;
+  padding: 20% 0 0 10%;
+  width: 50%;
+  height: 100vh;
+}
+
+.title {
+  font-family: "Pacifico", cursive;
+  color: #d9d9d9;
+  font-size: 50px;
+}
+
+h2 {
+  color: rgb(0, 255, 136);
+  font-size: 20px;
+  font-family: "Righteous", cursive;
+  padding-top: 1%;
+}
+
+.desc {
+  font-family: "Righteous", cursive;
+  color: #d9d9d9;
+  padding: 3% 0 3% 0;
+}
