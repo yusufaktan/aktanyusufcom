@@ -36,4 +36,9 @@
     line-height: 45px;
     font-size: 20px;
   }
+  
+  .loader span {
+    height: 3vw;
+    width: 3vw;
+  }
 }
