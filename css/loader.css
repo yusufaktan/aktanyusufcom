@@ -71,4 +71,9 @@
   100% {
     transform: none;
   }
+  
+  .loader span {
+    height: 3vw;
+    width: 3vw;
+  }
 }
