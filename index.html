@@ -1,116 +1,51 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/loader.css" />
-    <link rel="stylesheet" href="css/dark-lightMode.css" />
-    <link rel="stylesheet" href="css/socialMediaButtons.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <!-- favicon -->
-    <link rel="icon" href="favicon.ico" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
-      rel="stylesheet"
-    />
-    <!-- icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- jquery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      console.log(
-        "   :B\&\&\&\&\&\&!          ::::::.           \n    ^#\&\&\&\&\&\&^        JBBBBBBP.          \n     ~\&\&\&\&\&\&\&:      JBBBBBBBBP.         \n      7\&\&\&\&\&\&#.    JBBBBBBBBBB5.        \n       ?\&\&\&\&\&\&B.  ?BBBBBBBBBBBB5        \n        Y\&\&\&\&\&@P ?BBBBBBPJBBBBBBY       \n        .5\&\&\&\&\&!7BBBBBBP   BBBBBBY      \n         .G\&\&\&!!BBBBBBG    JBBBBBBJ     \n          :B\&!!BBBBBBG:    !GBBBBBBJ    \n           :~~BBBBBBG:7BBBBBBBBBBBBBJ   \n            ~BBBBBBG:7#BBBBBBBBBBBBB#J  \n           ~BBBBBBG::YYYYYYYYYYYYYYYYY^ \n          ~BBBBBBB:                     \n         ~BBBBBBB^                      \n"
-      );
-    </script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yusuf Aktan</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="container-left">
-        <h1 class="title">Yusuf Aktan</h1>
-
-        <h2 class="subTitle">
-          <span
-            class="txt-rotate"
-            data-period="2000"
-            data-rotate='[ "learner.", "developer.", "coder.", "researcher."]'
-          ></span>
-        </h2>
-
-        <p class="desc">
-          Software enthusiast from Turkey. <br />
-          Currently available for work.
-        </p>
-
-        <div class="socialmedia">
-          <a
-            class="btn"
-            href="https://www.linkedin.com/in/yusufaktan/"
-            target="”_blank”"
-          >
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-
-          <a class="btn" href="https://github.com/yusufaktan" target="”_blank”">
-            <i class="fab fa-github"></i>
-          </a>
-
-          <a
-            class="btn"
-            href="https://www.instagram.com/aktny/"
-            target="”_blank”"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-
-          <a class="btn" href="mailto:yusufaktn@outlook.com" target="_blank">
-            <i class="fa fa-envelope"></i>
-          </a>
-
-          <div class="theme-container">
-            <img
-              id="theme-icon"
-              src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg"
-              alt="ERR"
-            />
-          </div>
-          <div class="loader-div">
-            <span class="loader">
-              <span></span>
-              <span></span>
-            </span>
-          </div>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script>
+        // Dark mode kontrolünü sayfa yüklenmeden önce uygula
+        (function() {
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Yusuf <span>Aktan</span></div>
+        <div class="nav-links">
+            <a href="blog.html">Blog</a>
+            <label class="theme-switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider"></span>
+            </label>
         </div>
-      </div>
-    </div>
+    </header>
+    <main>
+        <div class="main-photo">
+            <img src="img/photo.jpg" alt="Yusuf Aktan">
+        </div>
+        <div class="title">Hello! I'm <span>Yusuf</span> <span>👋</span></div>
+        <div class="subtitle">Software Developer</div>
+        <div class="description">Software enthusiast from Turkey. Currently available for work.</div>
+        <div class="social-buttons">
+            <a href="https://github.com/yusufaktan" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yusufaktan" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:yusufaktn@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </main>
+    <footer>
+        © 2024 Yusuf Aktan
+    </footer>
 
-    <script src="js/p5.min.js"></script>
-    <script src="js/vanta.trunk.min.js"></script>
-    <script src="js/loader.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/dark-lightMode.js"></script>
-    <script src="js/textEffect.js"></script>
-  </body>
+    <script src="js/app.js"></script>
+</body>
 </html>

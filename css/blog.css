@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 0 25%;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: nowrap; /* Prevents line wrapping */
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo span {
+    color: #b36b00;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    
+}
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    margin-left: 10px;
+}
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: #404040;
+}
+input:checked + .slider::before {
+    transform: translateX(14px);
+}
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+.dark-mode .card {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+.dark-mode .card-title {
+    color: #b36b00;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+.card {
+    display: flex;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.5s, color 0.5s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #b36b00;
+    margin-bottom: 10px;
+}
+.card-desc {
+    font-size: 14px;
+    color: #666;
+}
+footer {
+    justify-content: center;
+    padding: 10px 0;
+}
