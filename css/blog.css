@@ -16,7 +16,7 @@ header, footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    flex-wrap: nowrap; /* Prevents line wrapping */
+    flex-wrap: nowrap;
 }
 .logo {
     font-size: 24px;
